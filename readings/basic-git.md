@@ -45,6 +45,7 @@ Assuming you have git installed on your system (see _Additional Resources_ below
 * a *commit* is one set of file changes
     * commits have *commit messages* that are short descriptions summarizing the content of the commit
     * It is tempting to have nearly empty and repetitive commit messages, but it is better to have each commit message be meaningful
+    * I recommend having the commit message complete this sentence: "This commit does ..."
 * When you are changing files, each file change can have different statuses
     * Files can be *untracked*, which is usually a new file
     * Files can be tracked and *unstaged* changes, which means you've made changes but have not told git that you want these changes to be recorded
