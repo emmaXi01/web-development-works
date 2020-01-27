@@ -6,5 +6,17 @@ function compare( word, guess ) {  // DO NOT MODIFY
 
 /* YOU MAY MODIFY THE LINES BELOW */
 
-  return 0; // this line is wrong
+    let matches = 0;
+    const characterCount = {};
+    for(let character of word.toLowerCase()) {
+        characterCount[character] = characterCount[character] ? characterCount[character] + 1 : 1;
+    }
+
+    for(let character of guess.toLowerCase()) {
+        if(characterCount[character]) {
+            matches++;
+            characterCount[character]--;
+        }
+    }
+    return matches;
 }
