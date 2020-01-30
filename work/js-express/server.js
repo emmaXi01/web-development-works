@@ -8,7 +8,7 @@ const chatWeb = require('./chat-web');
 app.use(express.static('./public'));
 
 app.get('/', (req, res) => {
-  res.send(chatWeb.chatPage(chat));
+  res.send(chatWeb.renderChatPage(chat));
 });
 
 app.post('/sendMessage', express.urlencoded({ extended: false }), (req, res) => {

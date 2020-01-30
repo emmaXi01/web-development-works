@@ -43,10 +43,31 @@
 }
 
 .sender-info { 
+
 }
 
 .message-info { 
 }
 
 .outgoing { 
+  display: flex;
+}
+
+.new-username {
+  height: 10px;
+  padding:3px;
+}
+
+.to-send {
+  height: 15px;
+  padding:3px;
+}
+
+
+.outgoing button {
+  background-color: rgb(20, 152, 240);
+  border-radius: 4px;
+  color: white;
+  height: 25px;
+
 }
