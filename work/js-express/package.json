@@ -1,0 +1,19 @@
+{
+  "name": "js-express",
+  "version": "1.0.0",
+  "description": "* start from the up-to-date master branch (`git checkout master; git pull origin master`) * Create a feature branch named 'js-express' (`git checkout -b js-express`) * modify the files in this directory to have the require features * add, commit, and push the branch to github * Create a PR to merge to master * Be sure to include the TA(s) and I as reviewers.   * Due by 11:59pm (PT) Sun Feb 2",
+  "main": "chat-web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
