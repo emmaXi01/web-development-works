@@ -1,0 +1,52 @@
+#chat-app { 
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.display-panel { 
+  display: flex;
+  flex-direction: row;
+}
+
+.users { 
+  border: 1px solid black;
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.messages { 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.message { 
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+}
+
+.message:hover { 
+  background-color: #BADA55;
+}
+
+.meta-info { 
+  min-width: 100px;
+  background-color: lightgrey;
+  padding: 5px;
+}
+
+.message-text { 
+  padding-left: 10px;
+}
+
+.sender-info { 
+}
+
+.message-info { 
+}
+
+.outgoing { 
+}

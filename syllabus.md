@@ -56,6 +56,8 @@ Mon Jan 27, Mon Feb 3
  - debugging JS, unit tests, testing pyramid, TDD
  - functions as objects, prototypes, 'this'(context), callbacks, threads, try/catch, closures, scopes
  - templates, Model-View-Controller(MVC)
+ - HTTPS/SSL, public-key encryption, certificates, Authentication, Authorization
+ - Password hashing/salting, JWT, SQL Injection
 
 At the end of Section 1 you should be able to write a simple multiple page web application using NodeJS that serves semantic HTML and styles with CSS.  You will receive from github repository updates and submit your work via Pull Requests (PRs) in the same fashion that many employers conduct their work.
 
@@ -75,7 +77,7 @@ Mon Mar 23
  - Frontend frameworks/libraries, React, virtual DOM, JSX, Single Page Applications (SPA)
  - props vs state, Pure components vs stateful components, render props, Higher Order Components
  - Progressive Enhancement
- - Application state management
+ - Application state management, CRUD
 
 At the end of Section 2 you should be able to write a simple single page web application (SPA) calling RESTful, external services, and use NodeJS to provide those service endpoints
 
@@ -84,15 +86,12 @@ Mon Mar 30,
 Mon Apr 6, 
 Mon Apr 13
 
- - Same Origin Policy(SOP), CORS, XSS, XSRF/CSRF, CSP
- - HTTPS/SSL, public-key encryption, certificates, Authentication, Authorization
- - CRUD, SQL Injection, OWASP
+ - Same Origin Policy(SOP), CORS, XSRF/CSRF, CSP, OWASP
  - Progressive Web Apps (PWA)
  - as-a-service (PaaS, FaaS)
  - Agile, change management, Software Patterns
  - Mockups, wireframes, prototypes
  - Obfuscation, copyrights, and module licensing
- - Password hashing/salting, JWT, Oauth, OIDC
  - JS on other platforms, websockets
 
 At the end of Section 3 you should be able to analyze provided designs to matching write a complex single page web application (SPA) and prior to actual coding identify potential problems with development due to insufficient/poor requirements.
