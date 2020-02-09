@@ -11,7 +11,7 @@ A: static assets won't change from request to request, like CSS, images, and HTM
 
 ## Q: What is the difference between a relative and absolute file path in an href?  What is the "webserver root/document root" and how do absolute/relative paths relate to this document root?
 
-A: A relative path is based on navigation from the path of the currently loaded page, while an absolute path is taken from the root directory of the server. Webserver root/document root is the directory that is accessed when you navigate to the website's domain, it is the location from which the web server loads files for document requests. for example localhost:3000 is a document root. Document root is the root directory of absolute paths. For example, if we were on the http://example.com/foo/, for absolute path <img src="/images/cat.png"/>, its path is http://example.com/images/cat.png, for relative path <img src="images/cat.png"/>, its path is http://example.com/foo/images/cat.png.
+A: A relative path is based on navigation from the path of the currently loaded page, while an absolute path is taken from the root directory of the server. Webserver root/document root is the directory that is accessed when you navigate to the website's domain, it is the location from which the web server loads files for document requests. for example localhost:3000 is a document root. Document root is the root directory of absolute paths. For example, if we were on the http://example.com/foo/, for absolute path `<img src="/images/cat.png"/>`, its path is http://example.com/images/cat.png, for relative path `<img src="images/cat.png"/>`, its path is http://example.com/foo/images/cat.png.
 
 ## Q: What is the difference between server-side and client-side JS?
 
