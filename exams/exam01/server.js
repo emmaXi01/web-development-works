@@ -10,16 +10,18 @@ app.use(express.static('./public'));
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
-    const uid = req.query.uid;
-    let isCompleted = false; 
+    let uid = req.query.uid;
+    let isCompleted = false;
+
     if(uid) {  
         isCompleted = game.users[uid].isCompleted;  
-        res.send(gameWeb.gamePage({ game, words, uid, isCompleted }));
     } else {
-        const uid = Math.floor(Math.random() * 1000);
+        uid = Math.floor(Math.random() * 1000);
         game.addUser(uid, words);
-        res.send(gameWeb.gamePage({ game, words, uid, isCompleted }));
     } 
+    
+    res.send(gameWeb.gamePage({ game, words, uid, isCompleted }));
+    
 });
 
 app.post('/guessWord', (req, res) => {
