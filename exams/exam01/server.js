@@ -10,32 +10,32 @@ app.use(express.static('./public'));
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
-    let uid = req.query.uid;
+    let userId = req.query.userId;
     let isCompleted = false;
 
-    if(uid) {  
-        isCompleted = game.users[uid].isCompleted;  
+    if(userId && game.users[userId]) {  
+        isCompleted = game.users[userId].isCompleted;  
     } else {
         do{
-            uid = Math.floor(Math.random() * 1000);
-        } while(game.users[uid]);
-        game.addUser(uid, words);
+            userId = Math.floor(Math.random() * 1000);
+        } while(game.users[userId]);
+        game.addUser(userId, words);
     } 
     
-    res.send(gameWeb.gamePage({ game, words, uid, isCompleted }));
+    res.send(gameWeb.gamePage({ game, words, userId, isCompleted }));
     
 });
 
 app.post('/guessWord', (req, res) => {
-    const { guess, uid } = req.body;
-    game.addGuessResult({ uid, guess, words });
-    res.redirect('/?uid=' + uid);
+    const { guess, userId } = req.body;
+    game.addGuessResult({ userId, guess, words });
+    res.redirect('/?userId=' + userId);
 });
 
 //play again
 app.post('/restart', (req, res) => {
-    const { uid }= req.body;
-    game.removeUser(uid)
+    const { userId }= req.body;
+    game.removeUser(userId)
     res.redirect('/');
 });
 

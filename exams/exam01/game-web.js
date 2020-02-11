@@ -1,5 +1,5 @@
 const gameWeb = {
-    gamePage: function({ game, words, uid, isCompleted }) {
+    gamePage: function({ game, words, userId, isCompleted }) {
         return `
         <!DOCTYPE html>
         <html>
@@ -20,11 +20,11 @@ const gameWeb = {
                 </div> 
             </div> 
             <div class="guess-panel">
-                ${gameWeb.getOutGoing({ uid, isCompleted })}  
+                ${gameWeb.getOutGoing({ userId, isCompleted })}  
             </div>
             <div class="result-panel">
-                ${gameWeb.getGuessedWordList(game, uid)}
-                ${gameWeb.getGuessResultList(game, uid)}   
+                ${gameWeb.getGuessedWordList(game, userId)}
+                ${gameWeb.getGuessResultList(game, userId)}   
             </div>    
                  
         </body>
@@ -44,40 +44,40 @@ const gameWeb = {
     `;
     },
 
-    getOutGoing: function({ uid, isCompleted }) {
+    getOutGoing: function({ userId, isCompleted }) {
         if(!isCompleted) {
-            return gameWeb.allowGuess(uid);
+            return gameWeb.allowGuess(userId);
         } else {
-            return gameWeb.getPlayAgain(uid);
+            return gameWeb.getPlayAgain(userId);
         }  
     },
 
-    allowGuess: function(uid) {
+    allowGuess: function(userId) {
         return ` 
             <div class="outgoing">
                 <form action="/guessWord" method="POST">
                     <input class="to-guess" type="text" name="guess" placeholder="Enter a guess word"/>
                     <button class="submit-button" type="submit">submit</button>
-                    <input class="user-id" name="uid" value=${uid} type="hidden"/>
+                    <input class="user-id" name="userId" value=${userId} type="hidden"/>
                 </form>
             <div>
         `;
     },
 
-    getPlayAgain: function(uid){
+    getPlayAgain: function(userId){
         return ` 
             <div class="outgoing">
                 <form action='/restart' method='POST'>
-                    <input class="user-id" name="uid" value=${uid} type="hidden"/>
+                    <input class="user-id" name="userId" value=${userId} type="hidden"/>
                     <button class="play-again-button" type = "submit" name="restart"> Play Again </button>
                 </form>
             </div>  
         `;
     },
 
-    getGuessedWordList: function(game, uid) {
+    getGuessedWordList: function(game, userId) {
         return `<ul>` + 
-            game.users[uid].guessedWords.map(guess => {
+            game.users[userId].guessedWords.map(guess => {
                 return `
                 <div class="guess-info">
                     <span class="guess-word">${guess}</span>
@@ -86,9 +86,9 @@ const gameWeb = {
             `</ul>`;
     },
 
-    getGuessResultList: function(game, uid) {
+    getGuessResultList: function(game, userId) {
         return `<ul>` + 
-            game.users[uid].guessResults.map(result => {
+            game.users[userId].guessResults.map(result => {
                 return `
                 <div class="result-info">
                     <span class="result">${result}</span>
