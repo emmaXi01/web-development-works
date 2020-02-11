@@ -16,7 +16,9 @@ app.get('/', (req, res) => {
     if(uid) {  
         isCompleted = game.users[uid].isCompleted;  
     } else {
-        uid = Math.floor(Math.random() * 1000);
+        do{
+            uid = Math.floor(Math.random() * 1000);
+        } while(game.users[uid]);
         game.addUser(uid, words);
     } 
     

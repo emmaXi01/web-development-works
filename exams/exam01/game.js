@@ -35,7 +35,7 @@ function addGuessResult({ uid, guess, words }) {
     }
 
     const match = compare(guess, secretWord);
-    users[uid].guessResults.push(`You macthed ${match} letters out of ${secretWord.length}!`); 
+    users[uid].guessResults.push(`You matched ${match} letters out of ${secretWord.length}!`); 
     users[uid].guessedWords.push(guess);
 }
 

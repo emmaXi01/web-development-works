@@ -11,6 +11,28 @@ const gameWeb = {
             <header class="page-header">
                 <img id="logo" src="images/logo.png" alt="game logo">
             </header>
+            ${gameWeb.getInstructions()} 
+            <div class="display-panel">
+                <img id="wordguess-picture" src="images/guessword.png">
+                <div class="words-info">
+                    <h3>Please guess the word from the following word list:</h3>
+                    <p class="valid-words">${words.join(",   ")}</p>
+                </div> 
+            </div> 
+            <div class="guess-panel">
+                ${gameWeb.getOutGoing({ uid, isCompleted })}  
+            </div>
+            <div class="result-panel">
+                ${gameWeb.getGuessedWordList(game, uid)}
+                ${gameWeb.getGuessResultList(game, uid)}   
+            </div>    
+                 
+        </body>
+        </html>`
+    },
+
+    getInstructions: function() {
+        return `
             <div class="instruction-panel">
                 <h3>instructions:</h3>
                 <ul >
@@ -19,22 +41,7 @@ const gameWeb = {
                     <li>"Invalid Word!" warning means it is not one of the permitted words. You can continue to guess!</li>
                 </ul>
             </div>
-            <div class="display-panel">
-                <img id="wordguess-picture" src="images/guessword.png">
-                <div class="words-info">
-                    <h3>Please guess the word from the following word list:</h3>
-                    <p class="valid-words">${words.join(",   ")}</p>
-                </div>     
-            </div>
-            <div class="guess-panel">
-                ${gameWeb.getOutGoing({ uid, isCompleted })}  
-            </div>
-            <div class="result-panel">
-                ${gameWeb.getGuessedWordList(game, uid)}
-                ${gameWeb.getGuessResultList(game, uid)}   
-            </div>    
-        </body>
-        </html>`
+    `;
     },
 
     getOutGoing: function({ uid, isCompleted }) {
@@ -51,7 +58,7 @@ const gameWeb = {
                 <form action="/guessWord" method="POST">
                     <input class="to-guess" type="text" name="guess" placeholder="Enter a guess word"/>
                     <button class="submit-button" type="submit">submit</button>
-                    <input class="userId" name="uid" value=${uid} type="hidden"/>
+                    <input class="user-id" name="uid" value=${uid} type="hidden"/>
                 </form>
             <div>
         `;
@@ -61,8 +68,8 @@ const gameWeb = {
         return ` 
             <div class="outgoing">
                 <form action='/restart' method='POST'>
-                    <input class="userId" name="uid" value=${uid} type="hidden"/>
-                    <button class="play-again-button" type = "submit" name="restar"> Play Again </button>
+                    <input class="user-id" name="uid" value=${uid} type="hidden"/>
+                    <button class="play-again-button" type = "submit" name="restart"> Play Again </button>
                 </form>
             </div>  
         `;
