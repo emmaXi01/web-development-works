@@ -1,0 +1,86 @@
+/* page header */
+.page-header {
+    background-color: rgb(101, 153, 250);
+    height: 60px;
+    margin: -10px;
+    padding: 0px;
+    border: 0px  
+}
+
+#logo {
+    display:flex;
+    height:50px;
+    padding:10px;
+}
+
+/* instruction panel */
+.instrcution-panel {
+    padding: 5px; 
+}
+
+/* display panel */
+.display-panel {
+    text-align: center;
+    padding: 5px; 
+
+}
+
+#wordguess-picture {
+    border-radius: 20px;
+    height:150px;
+    width:250px;
+    text-align: center;
+}
+.words.info{
+    text-align: center;
+    padding: 5px; 
+
+}
+.valid-words {
+    white-space: pre-line;
+    border: 1px solid black;
+    margin: auto;
+    width: 300px;
+    height:55px;
+    text-align: center;
+    overflow-y:auto;
+    overflow-x:auto;
+    white-space: -moz-pre-wrap; 
+    white-space: pre-wrap; 
+}
+
+/* guess panel */
+.guess-panel {
+    text-align: center;
+    padding: 5px;
+}
+
+.to-guess {
+    padding: 10px;
+}
+
+.submit-button, .play-again-button {
+    background-color: rgb(69, 156, 238);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
+.play-again-button {
+    margin:10px;
+}
+
+/* result panel */
+.result-panel{
+    display: flex;
+    flex-direction: row;
+
+   /* border: 1px solid black;*/
+    height: 100px;
+    overflow-y:auto;
+    overflow-x:auto;
+    
+
+}
+
