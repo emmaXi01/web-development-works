@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <title>Store Inventory</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="page-status">
+        <p>Loading...</p>
+    </div>
+    <div class="login-panel">
+        <input class="user-name" type="text" placeholder="Enter a user name" />
+        <button class="login-button" type="button">Sign in</button>
+        <span class="login-status"></span>
+    </div>
+    <div class="store-inventory">
+        <h1 class="title">Store Inventory List</h1>
+        <div class="logout">
+            <button class="logout-button" type="button">Sign out</button>
+        </div>
+        <div class="inventory-panel">   
+            <ol class="items"></ol> 
+        </div>   
+        <div class="outgoing">
+            <div>
+                <label>Item Name: </label>
+                <input class="to-add-item" type="text" placeholder="Enter a item name" />
+                <label>Quantity: </label>
+                <input class="to-add-quantity" type="text" placeholder="Enter the quantity" />
+                <button class="add-button" type="button">Add Item</button>
+            </div>
+            <div class="item-status-info">
+                <span class="item-status"></span>
+            </div>  
+        </div>  
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
