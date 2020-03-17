@@ -72,10 +72,8 @@ Mon Mar 23
 
  - the DOM, cookies, localStorage, indexedDB
  - application state, state in model vs state in DOM
- - asynchronous events (async), Promises, XHR/fetch/AJAX, HTTP verbs (methods), REST, GraphQL, services/endpoints
+ - asynchronous events (async), Promises, XHR/fetch/AJAX, HTTP verbs (methods), REST, services/endpoints
  - polyfills, minifiers, linters, bundlers, transpilers, CSS preprocessors, builds
- - Frontend frameworks/libraries, React, virtual DOM, JSX, Single Page Applications (SPA)
- - props vs state, Pure components vs stateful components, render props, Higher Order Components
  - Progressive Enhancement
  - Application state management, CRUD
 
@@ -86,13 +84,13 @@ Mon Mar 30,
 Mon Apr 6, 
 Mon Apr 13
 
+ - Frontend frameworks/libraries, React, virtual DOM, JSX, Single Page Applications (SPA)
+ - props vs state, Pure components vs stateful components, render props, Higher Order Components
  - Same Origin Policy(SOP), CORS, XSRF/CSRF, CSP, OWASP
- - Progressive Web Apps (PWA)
  - as-a-service (PaaS, FaaS)
  - Agile, change management, Software Patterns
  - Mockups, wireframes, prototypes
  - Obfuscation, copyrights, and module licensing
- - JS on other platforms, websockets
 
 At the end of Section 3 you should be able to analyze provided designs to matching write a complex single page web application (SPA) and prior to actual coding identify potential problems with development due to insufficient/poor requirements.
 
