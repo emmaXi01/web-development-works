@@ -1,5 +1,5 @@
 export const fetchLogIn = (username) => {
-  return fetch('/session/', {
+  return fetch('/session', {
     method: 'POST',
     headers: new Headers({
       'content-type': 'application/json',
@@ -18,7 +18,7 @@ export const fetchLogIn = (username) => {
 };
 
 export const fetchLoginStatus = () => {
-  return fetch('/session/', {
+  return fetch('/session', {
     method: 'GET',
   })
   .catch( () => {
