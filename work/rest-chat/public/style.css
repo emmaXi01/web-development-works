@@ -1,0 +1,136 @@
+/* login */
+.login-panel {
+    padding: 30px;
+ }
+ 
+.user-name {
+    width: 100%;
+    padding: 12px 10px;
+    font-size: medium;
+    margin: 8px 0; 
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+ 
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: medium;
+    padding: 14px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+} 
+
+ /* status */
+ .status {
+    font-size: medium;
+    padding: 10px;
+ }
+   
+ /* chat room */
+ .chat-app {
+     padding: 5px;
+     margin: 0px;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .title {
+     text-align: center;
+     padding: 2px;
+ }
+ 
+ .logout-button{
+     background-color:  #4CAF50;
+     color: white;
+     border-radius: 4px;  
+     height: 25px;
+     font-size: 15px;
+     margin: 14px;
+ }
+ 
+ .display-panel {  
+     display: flex;
+     flex-direction: row;
+     border-radius: 10px;
+     margin: auto;
+     padding-left: 50px;
+    
+ }
+ 
+
+ .users-panel {
+    border-radius: 5px;
+    background-color:grey;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    height: 350px;  
+    overflow-y:auto;
+    overflow-x:auto;
+ }
+
+ .users-panel ul li {
+    list-style-type:none;
+  }
+
+  .users {
+    padding-inline-start: 0px;
+  }
+
+  .user{
+      font-size: medium;
+      padding:5px;
+  }
+
+ .messages-panel {
+    border-radius: 5px;
+    background-color:#EBEBEB;
+    padding-left: 50px;
+    padding-right: 400px;
+    height: 350px;  
+    overflow-y:auto;
+    overflow-x:auto;
+ }
+
+ .message-info {
+    padding-top: 20px;
+ }
+ 
+ .meta-info{
+     padding: 3px;
+ }
+ 
+ .text-info{
+    padding: 5px;
+ }
+
+ /* outgoing panel */
+ .outgoing {
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+     margin: 20px;
+ }
+ 
+ .to-add-message {
+     border: 1px solid black;
+     border-radius: 3px;
+     height: 25px;
+     padding-left: 5px;
+     font-size: 15px;
+     margin-left: 15px;
+     margin-right: 15px;
+     width: 400px;
+ }
+
+ .send-button {
+     background-color: rgb(50, 166, 243);
+     border-radius: 4px;
+     height: 25px;
+     font-size: 15px;
+     margin-right: 30px;
+ }
+ 
