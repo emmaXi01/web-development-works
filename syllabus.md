@@ -85,7 +85,7 @@ Mon Apr 6,
 Mon Apr 13
 
  - Frontend frameworks/libraries, React, virtual DOM, JSX, Single Page Applications (SPA)
- - props vs state, Pure components vs stateful components, render props, Higher Order Components
+ - props vs state, Pure components vs stateful components
  - Same Origin Policy(SOP), CORS, XSRF/CSRF, CSP, OWASP
  - as-a-service (PaaS, FaaS)
  - Agile, change management, Software Patterns
