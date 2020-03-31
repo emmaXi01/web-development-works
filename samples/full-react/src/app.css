@@ -1,0 +1,24 @@
+.app {
+
+}
+
+.nav {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style-type: none;
+  background-color: #bada55;
+}
+
+.nav > li { 
+  padding: 5px;
+}
+
+.nav > li.action:hover { 
+  background-color: aqua;
+}
+
+.nav > li.logout { 
+  margin-left: auto;
+}
+
