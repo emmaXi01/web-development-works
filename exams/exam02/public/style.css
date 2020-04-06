@@ -1,0 +1,122 @@
+/* header */
+.header-info {
+    height: 60px;
+    margin-top: 20px;;
+    margin-right: 50px;
+    border: 0px 
+}
+
+.login-button{
+    float: right;
+    background-color:  #4CAF50;
+    color: white;
+    border-radius: 4px;  
+    height: 25px;
+    font-size: 15px;
+}
+
+.logout-button{
+    float: right;
+    background-color:  #4CAF50;
+    color: white;
+    border-radius: 4px;  
+    height: 25px;
+    font-size: 15px;
+}
+
+
+/* recipes */
+.title {
+    text-align: center;
+}
+
+.recipes-display {  
+    display: block;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color:#EBEBEB;
+    height: 300px;
+    margin: 0px 50px;
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+.recipe-info:hover {
+    background-color: #0096FF;   
+}
+
+.recipe-info {
+    padding: 10px;
+}
+
+.recipe-title, .recipe-author, .recipe-ingredients, .recipe-instrcutions {
+    font-size: large;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+
+/* recipe details */
+.recipe-details-panel {
+    margin: 0px 50px;
+}
+.recipe-ingredients, .recipe-instrcutions {
+    height: 60px;
+    overflow-y:auto;
+    overflow-x:auto;
+}
+
+/* new recipe */
+.new-recipe-panel {
+    text-align: center;
+}
+.new-recipe-title, .new-recipe-ingredients, .new-recipe-instructions {
+    margin: 5px;
+}
+.to-add-recipe {
+    background-color: rgb(50, 166, 243);
+    border-radius: 4px;
+    height: 25px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+/* login */
+.login-panel {
+    padding: 50px;
+ }
+ 
+ .username {
+     width: 100%;
+     padding: 12px 20px;
+     font-size: medium;
+     margin: 8px 0; 
+     border: 1px solid #ccc;
+     box-sizing: border-box;
+   }
+ 
+.to-login {
+    background-color: #4CAF50;
+    color: white;
+    font-size: medium;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* outgoing */
+.outgoing {
+    text-align: center;
+}
+.new-recipe-button, .back-home-button {
+    background-color: #4CAF50;
+    border-radius: 4px;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    font-size: medium;
+    width: 200px;   
+}
