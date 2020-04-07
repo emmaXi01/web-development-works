@@ -31,7 +31,7 @@ routes.session.status = ( req, res ) => {
     web(res)({status: 401, message: 'no valid session' });
     return;
   }
-  web(res)();
+  web(res)({ data: session.getSession(sid) } );
 };
 
 routes.session.create = ( req, res ) => {

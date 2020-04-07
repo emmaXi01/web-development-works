@@ -26,6 +26,10 @@ const attemptCreate = (username) => {
   return sessions[sid];
 };
 
+const getSession = (sid) => {
+  return sessions[sid];
+};
+
 const remove = (sid) => {
   delete sessions[sid];
 };
@@ -40,6 +44,7 @@ const canReadUser = ({ sid, username }) => {
 module.exports =  {
   validateSession,
   attemptCreate,
+  getSession,
   remove,
   canReadUser,
 };
