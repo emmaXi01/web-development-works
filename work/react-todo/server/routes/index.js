@@ -137,11 +137,11 @@ routes.tasks.all.remove = ( req, res ) => {
 
   const all = tasks.removeAll(username);
   if(!all) {
-    web(res)({ status: 404, message: 'no such taskId' });
+    web(res)({ status: 404, message: 'no tasks for user' });
     return;
   }
 
-  web(res)({ data: tasks.all } );
+  web(res)({ data: all } );
 };
 
 routes.tasks.one.add = ( req, res ) => {
