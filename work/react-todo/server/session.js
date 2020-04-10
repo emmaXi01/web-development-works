@@ -13,7 +13,7 @@ const validateSession = (sid) => {
 }
 
 const attemptCreate = (username) => {
-  if(!username || !username.match(/^[A-Za-z0-9_-]{2,20}/)) {
+  if(!username || !username.match(/^[A-Za-z0-9_-]{2,20}$/)) {
     return false;
   }
   const info = users.getInfo(username);

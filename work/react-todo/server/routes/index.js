@@ -42,7 +42,7 @@ routes.session.create = ( req, res ) => {
     return;
   }
   res.cookie('sid', sessionInfo.sid, { MaxAge: 1000*60 } );
-  web(res)({data: session});
+  web(res)({data: sessionInfo});
 };
 
 routes.session.remove = ( req, res ) => {
