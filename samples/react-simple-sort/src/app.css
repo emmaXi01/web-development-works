@@ -1,0 +1,31 @@
+.app { 
+
+}
+
+.controls { 
+  max-width: 640px;
+  background-color: #CCDDDD;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+}
+
+.controls .active { 
+  background-color: #C0FFEE;
+}
+
+.student-list { 
+  max-width: 640px;
+}
+.student { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.student:nth-of-type(2n) { 
+  background-color: #BADA55;
+}
+
