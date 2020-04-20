@@ -1,10 +1,10 @@
 # Job Search Tracker Application
 
-The project is Single Page Application about job search tracker. In the application, users can track the job information they applied easily and quickly. <br />
-The application name is "JobtrackerXi"
-The application doesn't connected to database, so every time restarting the application, all data disappears.
-The application bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).<br />
-The appliction implemented CRUD RESTful API with Express and Node.js. Users can track, update, delete and add a new job they applied. 
+* The project is Single Page Application about job search tracker. In the application, users can track the job information they applied easily and quickly.
+* The application name is "JobtrackerXi"
+* The application doesn't connected to database, so every time restarting the application, all data disappears.
+* The application bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+* The appliction implemented CRUD RESTful API with Express and Node.js. Users can track, update, delete and add a new job they applied. 
 
 
 ## Getting Started
